@@ -1,0 +1,11 @@
+## Requerimientos funcionales:
+- RF01: El sistema debe mostrar la fecha, nombre del evento, hora y lugar o plataforma a utilizar una vez que se acceda a la sección.
+- RF02: El sistema debe permitirle al usuario ver los detalles específicos de un evento una vez se seleccione de la lista de eventos (descripción, público meta, agenda, cronograma)
+- RF03: El sistema debe permitir la inscripción de eventos con un formulario que requiera nombre completo, correo electrónico, profesión u oficio, entidad para la que trabaja y razón por la que desea ser notificado.
+- RF04: El sistema debe mostrar un mensaje de confirmación una vez que se ha enviado la información con éxito, o uno de error si hay campos sin llenar.
+- RF05: El sistema debe enviar un correo electrónico al correo ingresado confirmando la inscripción inmediatamente después de enviar el formulario.
+- RF06: El sistema debe permitir enviar consultas a los encargados del evento, por medio de un cuadro de texto de no más de 200 caracteres.
+- RF07: El sistema debe permitirle al Editor crear eventos y agregar información que incluya: información de contacto (Nombre completo y correo electrónico), imágenes ilustrativas del evento (no mayor a 10mb cada una), público meta, cupo del evento e información adicional.
+- RF08: El sistema debe notificar inmediatamente después de que el evento fue enviado al Administrador, o por el contrario mostrar un mensaje de error si existen campos sin ser completados.
+- RF09: El sistema debe permitir al Administrador aprobar y eliminar eventos pendientes o publicados.
+- RF10: El sistema debe incluir un cuadro de texto que solicite el motivo en caso de rechazo de evento por parte del Administrador.
