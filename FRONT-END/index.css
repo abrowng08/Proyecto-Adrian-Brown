@@ -1,0 +1,145 @@
+:root {
+    --blanco: #FFFFFF;
+    --azulClaro: #3E578E;
+    --verdeTeal: #0de7a9;
+    --azulOscuro: #11294A;
+    --grisClaro: #ECF0F1;
+    --gris: #D6DBDF;
+    --grisOscuro: #464646;
+    --turquesa: #0DBEB0;
+    --negro: #121212;
+    --negroClaro: #282828;
+    --verde: #09310a;
+    --azul: #184E97;
+}
+
+body {
+    background-color: var(--grisClaro);
+
+}
+
+.topbar {
+    height: 65px;
+    background-color: var(--azul);
+    color: var(--blanco);
+    position: relative;
+    border-bottom: 7px solid var(--negro);
+}
+
+.topbar i {
+    color: var(--blanco);
+}
+
+.logo small {
+    font-size: 10px;
+    display: block;
+}
+
+@media(prefers-color-scheme: dark) {
+    body {
+        background-color: var(--negro);
+    }
+
+    .topbar {
+        background-color: var(--negroClaro);
+        border-bottom: 1px solid var(--gris);
+    }
+}
+
+/* Barra lateral */
+.sidebar {
+    background-color: var(--blanco);
+    border-right: 1px solid var(--verde);
+    min-height: calc(100vh - 56px);
+}
+
+.role-box {
+    background-color: var(--grisOscuro);
+    color: var(--blanco);
+    font-size: 14px;
+    height: 42px;
+}
+
+.btn-ver-todos-prod:hover {
+    background-color: var(--grisClaro);
+    color: var(--azulClaro);
+}
+
+.btn-ver-todos-prod {
+    background-color: var(--blanco);
+    display: block;
+    margin: 0 auto;
+}
+
+.list-productos li:not(:last-child) {
+    border-bottom: 1px solid var(--gris);
+    color: var(--gris);
+    padding: 10px 1rem 10px 1rem;
+    margin: 10px -1rem 10px -1rem;
+    margin-bottom: 10px;
+}
+
+.list-productos a {
+    color: var(--grisOscuro);
+}
+
+.svg-consolas {
+    width: 100px;
+    fill: var(--grisOscuro);
+}
+
+.card-option:hover {
+    background-color: var(--gris);
+    color: var(--azulClaro);
+}
+
+.card-option {
+    background: var(--blanco);
+    border-radius: 14px;
+    width: 157px;
+    height: 166px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-number {
+    background: var(--azul);
+    color: var(--blanco);
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+}
+
+.slide img {
+    width: 1200px;
+    height: 400px;
+    float: left;
+}
+
+.slideshow {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slide_wrapper {
+    animation: slide 20s ease infinite;
+    width: calc(1200px * 3);
+}
+
+@keyframes slide {
+    20% {
+        margin-left: 0px;
+    }
+
+    40% {
+        margin-left: calc(-1200px*1)
+    }
+
+    60% {
+        margin-left: calc(-1200px*2)
+    }
+}
